@@ -125,8 +125,10 @@ GET http://localhost:3001/api/health
 ```json
 {
   "info": {
+    "_postman_id": "12345678-1234-5678-9012-123456789012",
     "name": "Notes App Demo",
-    "description": "Fullstack lecture demo endpoints"
+    "description": "Fullstack lecture demo endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
@@ -134,7 +136,13 @@ GET http://localhost:3001/api/health
       "request": {
         "method": "GET",
         "header": [],
-        "url": "http://localhost:3001/api/notes"
+        "url": {
+          "raw": "http://localhost:3001/api/notes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "notes"]
+        }
       }
     },
     {
@@ -151,7 +159,13 @@ GET http://localhost:3001/api/health
           "mode": "raw",
           "raw": "{\n  \"title\": \"Created via Postman\",\n  \"content\": \"This note was created using Postman to demonstrate the POST endpoint!\"\n}"
         },
-        "url": "http://localhost:3001/api/notes"
+        "url": {
+          "raw": "http://localhost:3001/api/notes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "notes"]
+        }
       }
     },
     {
@@ -159,7 +173,13 @@ GET http://localhost:3001/api/health
       "request": {
         "method": "GET", 
         "header": [],
-        "url": "http://localhost:3001/api/notes/1"
+        "url": {
+          "raw": "http://localhost:3001/api/notes/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "notes", "1"]
+        }
       }
     },
     {
@@ -167,7 +187,13 @@ GET http://localhost:3001/api/health
       "request": {
         "method": "GET",
         "header": [],
-        "url": "http://localhost:3001/api/health"
+        "url": {
+          "raw": "http://localhost:3001/api/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "health"]
+        }
       }
     }
   ]
